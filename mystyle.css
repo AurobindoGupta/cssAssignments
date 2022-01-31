@@ -1,0 +1,66 @@
+/* -------------------------BASIC-------------------------------------- */
+/* .container {
+  width: 350px;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
+  background-color: aqua;
+  padding-bottom: 0.25rem;
+}
+.cardBase {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.headerGroup {
+  padding: 1rem;
+}
+.heading {
+  margin: 0;
+}
+.subHeading {
+  margin: 0;
+}
+.textPlaceholder {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+} */
+/* ------------------------------------------------------------------------------ */
+/* -------------------------BASIC WITH TXT OVER MEDIA-------------------------------------- */
+.container {
+  width: 350px;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
+  background-color: rgb(0, 255, 136);
+  padding-bottom: 0.25rem;
+}
+.cardBase {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.headerGroup {
+  padding: 1rem;
+}
+.heading {
+  margin: 0;
+}
+.subHeading {
+  margin: 0;
+}
+.textPlaceholder {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+/* ------------------------------------------------------------------------------ */
