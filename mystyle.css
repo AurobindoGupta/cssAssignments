@@ -1,48 +1,21 @@
+:root {
+  --background: #fefdfc;
+  --subHeadingGray: #b1b1b0;
+  --txtBtnColor: #ca63ff;
+  --txtBtnHover: #e3c1f3;
+  --iconBtnHover: #d0ccd0;
+}
 /* -------------------------BASIC-------------------------------------- */
-/* .container {
-  width: 350px;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
-  background-color: aqua;
-  padding-bottom: 0.25rem;
-}
-.cardBase {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.headerGroup {
-  padding: 1rem;
-}
-.heading {
-  margin: 0;
-}
-.subHeading {
-  margin: 0;
-}
-.textPlaceholder {
-  margin: 0;
-  padding: 0 1rem 1rem 1rem;
-}
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.5rem;
-} */
-/* ------------------------------------------------------------------------------ */
-/* -------------------------BASIC WITH TXT OVER MEDIA-------------------------------------- */
 .container {
   width: 350px;
   border-radius: 4px;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
-  background-color: rgb(0, 255, 136);
+  background-color: var(--background);
   padding-bottom: 0.25rem;
 }
 .cardBase {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .headerGroup {
   padding: 1rem;
@@ -52,6 +25,7 @@
 }
 .subHeading {
   margin: 0;
+  color: var(--subHeadingGray);
 }
 .textPlaceholder {
   margin: 0;
@@ -63,4 +37,92 @@
   justify-content: space-between;
   padding: 0.5rem;
 }
+.textBtnRead,
+.textBtnBookmark,
+.iconBtnHeart,
+.iconBtnShare,
+.iconBtnMenu {
+  background-color: var(--background);
+  border: none;
+  padding: 0.5rem;
+}
+.textBtnRead,
+.textBtnBookmark {
+  border-radius: 0.25rem;
+  color: var(--txtBtnColor);
+  font-size: 1rem;
+}
+.textBtnRead:hover,
+.textBtnBookmark:hover {
+  background-color: var(--txtBtnHover);
+}
+.textBtnRead:focus,
+.textBtnBookmark:focus {
+  background-color: var(--txtBtnHover);
+}
+.iconBtnHeart,
+.iconBtnShare,
+.iconBtnMenu {
+  font-size: 1.2rem;
+  border-radius:50%;
+}
+.iconBtnHeart:hover,
+.iconBtnShare:hover,
+.iconBtnMenu:hover {
+  background-color: var(--iconBtnHover);
+}
+.iconBtnHeart:focus,
+.iconBtnShare:focus,
+.iconBtnMenu:focus {
+  background-color: var(--iconBtnHover);
+}
+/* find how to make perfect circle */
+/* ------------------------------------------------------------------------------ */
+/* -------------------------TXT OVER MEDIA-------------------------------------- */
+/* find a way to do this without position */
+
+.headerGroup.textOverMedia {
+  padding: 1rem;
+  position: absolute;
+  top: 40%;
+  color: white;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* -------------------------With Header-------------------------------------- */
+
+.headerGroup.withHeader {
+  padding: 1rem;
+  order: -1;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* -------------------------ONLY BUTTONS-------------------------------------- */
+
+.iconBtn.onlyButtons {
+  visibility: hidden;
+}
+/* ------------------------------------------------------------------------------ */
+/* -------------------------ONLY ICONS-------------------------------------- */
+
+.textBtn.onlyIcons {
+  visibility: hidden;
+}
+/* ------------------------------------------------------------------------------ */
+/* -------------------------IMAGE AND HEADER-------------------------------------- */
+
+.cardBase.imageHeader {
+  display: flex;
+  flex-direction: row;
+}
+.cardImg.imageHeader {
+  max-width: 6.875rem;
+}
+
+.textPlaceholder.imageHeader {
+  display: none;
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
+}
+
 /* ------------------------------------------------------------------------------ */
