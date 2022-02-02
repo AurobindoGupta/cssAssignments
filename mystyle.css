@@ -12,6 +12,7 @@
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%);
   background-color: var(--background);
   padding-bottom: 0.25rem;
+  position:relative
 }
 .cardBase {
   display: flex;
@@ -94,6 +95,9 @@
 .headerGroup.withHeader {
   padding: 1rem;
   order: -1;
+}
+.textPlaceholder.withHeader{
+  padding-top: 1rem ;
 }
 
 /* ------------------------------------------------------------------------------ */
